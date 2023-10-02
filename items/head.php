@@ -10,8 +10,8 @@
     <!---->
     <link href="css/shepherd.css" rel="stylesheet">
     <!---->
-    <script src="https://cdn.jsdelivr.net/npm/shepherd.js@10.0.1/dist/js/shepherd.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shepherd.js@10.0.1/dist/css/shepherd.css"/>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/shepherd.js@10.0.1/dist/js/shepherd.min.js"></script> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shepherd.js@10.0.1/dist/css/shepherd.css"/> -->
     <link rel="stylesheet" href="css/styleVenta.css"/>
     <link rel="stylesheet" href="css/styleLogin.css"/>
     
