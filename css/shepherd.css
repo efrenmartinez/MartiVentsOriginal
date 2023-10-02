@@ -1,0 +1,134 @@
+@font-face {
+  font-family: 'GT Pressura';
+  src: url('../fonts/GTPressura-Bold.woff2') format('woff2'),
+  url('../fonts/GTPressura-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Founders Grotesk';
+  src: url('../fonts/FoundersGrotesk-Regular.woff2') format('woff2'),
+  url('../fonts/FoundersGrotesk-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/*estilo del contenedor principal*/
+.shepherd-content {
+    background: #ffffff;
+    height: auto;
+    /*background-color: w;*/
+    
+    border:solid 4px black;
+}
+.shepherd-has-title .shepherd-content .shepherd-header{
+    background: #fff !important;
+}
+.shepherd-has-title .shepherd-content .shepherd-header {
+    background: transparent;
+    font-family: "GT Pressura", sans-serif;
+    padding-bottom: 0;
+    padding-left: 2rem;
+}
+.shepherd-has-title .shepherd-content .shepherd-header .shepherd-title {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+/*Estilo de ambos botones ("salir o anterior" y siguiente)*/
+.shepherd-button{
+    border-top: solid 4px #000 !important;
+    border-bottom: solid 4px #000 !important;
+    border-radius: 0px !important;
+}
+/*estilo general de ambos botones ("salir o anterior" y siguiente)*/
+.shepherdBtns.shepherd-button, .shepherdBtnsSalir.shepherd-button{
+    background-color: #fff;
+    width: 50%;
+    color: #000;
+    font-weight: bolder;
+    margin: -1px;
+    margin: 1px 0px -4px;
+    text-align: center;
+        font-family: "GT Pressura", sans-serif !important;
+}
+/*estilo del boton "salir" y "anterior" al pasar encima */
+.shepherdBtnsSalir.shepherd-button:hover { 
+    background: #cad5d5 !important;
+    color: #000 !important;
+}
+/*estilo especifico para el boton "salir" y "anterior"*/
+.shepherdBtnsSalir.shepherd-button{
+    border-right: solid 4px #000 !important;
+    background-color: #cad5d5;
+}
+/*Especificar la psosiciòn de los botones*/
+.shepherd-footer {
+        margin-top: 6em;
+        padding: 0rem .0rem !important;
+}
+
+/*-----------------------------------------------------------------*/
+/*Dibujando la fecha cuando el contenido esta abajo del elemento*/
+.stepBottomArrow:after {
+  content: url(../img/arrow.svg);
+  position: absolute;
+  top: -1.4em;
+  left: 5.7em;
+  font-size: 2em;
+  transform: rotate(90deg);
+}
+
+/*Dibujando la fecha cuando el contenido esta abajo del elemento*/
+.stepTopArrow:after {
+  content: url(../img/arrow.svg);
+  transform: rotate(270deg);
+  position: absolute;
+  top: 14em;
+  left: 5.7em;
+  font-size: 2em;
+}
+/*Dibujando la fecha cuando el contenido esta a la derecha del elemento*/
+.stepRightArrow:after {
+  content: url(../img/arrow.svg);
+  position: absolute;
+  left: -1em;
+  font-size: 2em;
+  transform: rotate(0deg);
+  top: 3.8em;
+}
+/*Dibujando la fecha cuando el contenido esta a la izquierda del elemento*/
+.stepLeftArrow:after {
+  content: url(../img/arrow.svg);
+  position: absolute;
+  left: 12.6em;
+  font-size: 2em;
+  transform: rotate(180deg);
+  top: 5.8em;
+}
+/*Ocultar fecha por defecto*/
+.shepherd-arrow::before {
+  display: none;
+}
+/*-----------------------------------------------------------------*/
+.stepLeftArrow{
+    margin-right: 50px !important;
+}
+.stepBottomArrow {
+  margin-top: 50px !important;
+  margin-left: 18px !important;
+}
+.stepRightArrow{
+    margin-left: 50px !important;
+}
+
+#stepUno-description,#stepDos-description,#stepTres-description {
+    font-family: Founders Grotesk, sans-serif !important;
+    font-size: 19.2px;
+}
+
+.shepherd-element .shepherd-arrow:after {
+    display: inline-block;
+}
