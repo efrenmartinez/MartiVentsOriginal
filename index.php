@@ -35,9 +35,6 @@ session_start();
           
         </li>
         
-        <div id="conteMenu" >
-            
-        </div>
         
       </ul>
     </div>
